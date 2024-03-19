@@ -1,0 +1,91 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipo de letra*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #959fe8, pink);/* Color de fondo */
+    /*Agregacion del fondo*/
+    background: url(Imagen/letter-tiles-8516698_1920.jpg);
+    background-size: cover; /**/
+    background-position: center;
+
+}
+
+#start {
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    display: block;
+    position: relative;
+}
+#start button:hover {
+    background-color: #0292f1; /* Verde más oscuro al pasar el cursor */
+}
+
+#form{
+    padding: 20px;
+    margin: 20px auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px /*rgba(0, 0, 0, .2)*/; /*borde elevado en negro*/
+    /*background-color: white;*/
+    border-radius: 15px;
+    display: none;
+    text-align: center;  
+    /*video de youtube https://www.youtube.com/watch?v=hlwlM4a5rxg*/ 
+}
+
+
+#context {
+    width: 450px;/*anchura del contenedor*/
+    background-color: #fff; /* Color de fondo para el contexto */
+    margin: 0 auto 15px;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .2); /* Sombra suave */
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+/*.button {
+    padding: 10px 20px; 
+}*/
+
+.btn-primary{
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db; /* Color de fondo para botones */
+    color: #fff; /* Color del texto para botones */
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.btn-primary:hover { /*animacion inicial del boton principal*/
+    animation: pulsar 0.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes pulsar {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+    }
+
+
+.btn-success {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db; /* Color de fondo para botones */
+    color: #fff; /* Color del texto para botones */
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
